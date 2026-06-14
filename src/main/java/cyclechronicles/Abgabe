@@ -1,0 +1,12 @@
+Die Methode Shop#accept akzeptiert einen Auftrag genau dann, wenn es sich weder um ein E-Bike noch um ein Gravel-Bike handelt, der Kunde keinen anderen offenen Auftrag besitzt und im Shop aktuell höchstens vier offene Aufträge vorhanden sind.
+
+Äquivalenzklassen:
+- Fahrradtyp: erlaubt = normales Bike, nicht erlaubt = E-Bike oder Gravel-Bike.
+- Kundenstatus: erlaubt = kein offener Auftrag, nicht erlaubt = bereits offener Auftrag.
+- Warteschlange: erlaubt = 0 bis 4 offene Aufträge, nicht erlaubt = 5 oder mehr offene Aufträge.
+
+Grenzwerte:
+- 4 offene Aufträge: Auftrag wird noch angenommen.
+- 5 offene Aufträge: Auftrag wird abgelehnt.
+
+Daraus ergeben sich Testfälle für einen gültigen Auftrag, für E-Bikes, Gravel-Bikes, Kunden mit bereits offenem Auftrag sowie für die Grenzwerte 4 und 5 offene Aufträge.

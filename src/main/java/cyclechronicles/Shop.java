@@ -24,6 +24,8 @@ public class Shop {
    * @param o order to be accepted
    * @return {@code true} if all conditions are met and the order has been accepted, {@code false}
    *     otherwise
+   *
+   *
    */
   public boolean accept(Order o) {
     if (o.getBicycleType() == Type.GRAVEL) return false;
